@@ -18,8 +18,9 @@
       <%= render "layouts/nav" %>
     </header>
 
+    <%= turbo_frame_tag "popup" %>
+    
     <main class="container py-5">
-      <%= turbo_frame_tag "modal" %>
       <%= yield %>
     </main>
   </body>

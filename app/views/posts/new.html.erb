@@ -1,5 +1,5 @@
-<%= turbo_frame_tag "modal" do %>
-  <div class="modal">
+<%= turbo_frame_tag "popup" do %>
+  <div class="popup">
     <h1>New post</h1>
     <%= render "form", post: @post %>
     <br>
@@ -7,7 +7,7 @@
       <%= link_to "Cancel", "#", data: {
         controller: "modals",
         action: "modals#close"
-      }, class: "cancel-button" %>
+      }, class: "cancel" %>
     </div>
   </div>
 <% end %>

@@ -9,7 +9,7 @@ export default class extends Controller {
   close(e) {
     e.preventDefault();
 
-    const modal = document.getElementById("modal");
+    const modal = document.getElementById("popup");
     modal.innerHTML = "";
     modal.removeAttribute("src");
     modal.removeAttribute("complete");
